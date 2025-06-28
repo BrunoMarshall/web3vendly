@@ -1,0 +1,33 @@
+# Node.js and npm
+node_modules/
+package-lock.json
+yarn.lock
+.npm/
+
+# Vite build output
+dist/
+.vite/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Smart contract artifacts
+artifacts/
+cache/
+build/
+
+# Editor and OS-specific files
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Optional: Ignore local test files or sensitive data
+*.secret

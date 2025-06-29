@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// import Web3 from 'web3'; // Temporarily commented out to fix error
+// import Web3 from 'web3'; // Temporarily commented out to fix build error
 import QRCodeScanner from '../components/QRCodeScanner';
 
 const contractABI = [
@@ -16,7 +16,7 @@ const contractABI = [
 ];
 
 function Vending() {
-  // const [web3, setWeb3] = useState(null);
+  // const [web3, setWeb3] = useState(null); // Temporarily commented out
   const [contract, setContract] = useState(null);
   const [account, setAccount] = useState(null);
   const [items, setItems] = useState([

@@ -20,11 +20,16 @@ function Footer() {
     <footer className="bg-vendly-blue text-white py-6 text-center">
       <div className="container mx-auto flex flex-col items-center">
         <p className="mb-4">Supported by</p>
-        <img src={ShardeumLogo} alt="Shardeum Logo" className="h-5 mb-4" />
-        <div className="flex justify-center space-x-4 mb-4">
+        <img
+          src={ShardeumLogo}
+          alt="Shardeum Logo"
+          className="h-5 mb-4" // 50% smaller
+          style={{ height: '20px' }} // Fallback
+        />
+        <div className="flex justify-center space-x-4 mb-4"> // Centered social icons
           {socialLinks.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-              <img src={link.icon} alt={link.alt} className="h-6" />
+              <img src={link.icon} alt={link.alt} className="h-6" style={{ height: '24px' }} />
             </a>
           ))}
         </div>

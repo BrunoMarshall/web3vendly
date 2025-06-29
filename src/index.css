@@ -1,4 +1,3 @@
-/* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 @tailwind base;
@@ -7,7 +6,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f7f7f7; /* Very subtle gray */
+  background-color: #f7f7f7;
   margin: 0;
 }
 

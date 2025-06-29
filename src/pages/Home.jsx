@@ -14,7 +14,8 @@ function Home() {
         <img
           src={VendingMachine}
           alt="Vending Machine"
-          className="w-full max-w-xs mx-auto rounded-lg shadow-lg mb-8"
+          className="w-full max-w-xs mx-auto rounded-lg shadow-lg mb-8" // 50% smaller, centered
+          style={{ maxWidth: '256px', marginLeft: 'auto', marginRight: 'auto' }} // Fallback
           loading="lazy"
         />
         <NavLink

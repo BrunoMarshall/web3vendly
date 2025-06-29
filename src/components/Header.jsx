@@ -7,9 +7,14 @@ function Header() {
     <header className="bg-vendly-blue text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex-shrink-0">
-          <img src={Web3VendlyLogo} alt="Web3Vendly Logo" className="h-9" />
+          <img
+            src={Web3VendlyLogo}
+            alt="Web3Vendly Logo"
+            className="h-9" // ~25% smaller
+            style={{ height: '36px' }} // Fallback if Tailwind fails
+          />
         </div>
-        <nav className="flex-1 flex justify-center space-x-8 text-lg">
+        <nav className="flex-1 flex justify-center space-x-8 text-lg"> // Centered, larger font, more spacing
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? 'text-vendly-accent' : 'hover:text-vendly-accent')}

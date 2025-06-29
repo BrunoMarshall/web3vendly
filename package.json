@@ -1,7 +1,7 @@
 {
   "name": "web3vendly",
   "version": "1.0.0",
-  "homepage": "https://github.com/BrunoMarshall/SplitBillEz",
+  "homepage": "https://BrunoMarshall.github.io/web3vendly",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

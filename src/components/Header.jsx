@@ -10,11 +10,11 @@ function Header() {
           <img
             src={Web3VendlyLogo}
             alt="Web3Vendly Logo"
-            className="h-9" // ~25% smaller
-            style={{ height: '36px' }}
+            className="h-[72px] mr-6"
+            style={{ height: '72px', marginRight: '24px' }}
           />
         </div>
-        <nav className="flex-1 flex justify-center space-x-8 text-lg">
+        <nav className="flex-1 flex justify-center space-x-16 text-lg">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? 'text-vendly-accent' : 'hover:text-vendly-accent')}

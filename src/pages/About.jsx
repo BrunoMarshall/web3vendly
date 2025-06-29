@@ -7,7 +7,7 @@ function About() {
         Web3Vendly is redefining vending in the Web3 era by integrating crypto payments, NFT access, and on-chain transparency.
         Our mission is to bridge traditional vending with blockchain technology, enabling seamless, secure, and personalized experiences.
       </p>
-      <img src="/smart-locker.jpg" alt="Smart Locker" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" />
+      <img src="/smart-locker.jpg" alt="Smart Locker" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" loading="lazy" />
       <h2 className="text-2xl font-semibold mb-4">Join Us</h2>
       <p className="mb-4">Partner with us, become a pilot customer, or invest in the future of vending.</p>
       <a

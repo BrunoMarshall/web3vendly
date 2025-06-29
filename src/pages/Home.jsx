@@ -8,7 +8,7 @@ function Home() {
       <p className="text-lg mb-8">
         The future of vending machines powered by blockchain technology. Purchase products with crypto, unlock exclusive NFTs, and experience a new era of decentralized commerce.
       </p>
-      <img src={vendingMachine} alt="Vending Machine" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" />
+      <img src="/vending-machine.png" alt="Vending Machine" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" loading="lazy" />
       <div className="text-center">
         <NavLink
           to="/vending"

@@ -11,10 +11,10 @@ function Header() {
             src={Web3VendlyLogo}
             alt="Web3Vendly Logo"
             className="h-9" // ~25% smaller
-            style={{ height: '36px' }} // Fallback if Tailwind fails
+            style={{ height: '36px' }}
           />
         </div>
-        <nav className="flex-1 flex justify-center space-x-8 text-lg"> // Centered, larger font, more spacing
+        <nav className="flex-1 flex justify-center space-x-8 text-lg">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? 'text-vendly-accent' : 'hover:text-vendly-accent')}

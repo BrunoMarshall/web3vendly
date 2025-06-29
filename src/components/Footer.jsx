@@ -24,16 +24,16 @@ function Footer() {
           src={ShardeumLogo}
           alt="Shardeum Logo"
           className="h-5 mb-4" // 50% smaller
-          style={{ height: '20px' }} // Fallback
+          style={{ height: '20px' }}
         />
-        <div className="flex justify-center space-x-4 mb-4"> // Centered social icons
+        <div className="flex justify-center space-x-4 mb-4">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
               <img src={link.icon} alt={link.alt} className="h-6" style={{ height: '24px' }} />
             </a>
           ))}
         </div>
-        <p>© 2025 Web3Vendly. All rights reserved.</p>
+        <p>© 2025 Web3Vendly. All rights reserved. Powered by Shardeum.</p>
       </div>
     </footer>
   );

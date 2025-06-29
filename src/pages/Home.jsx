@@ -1,4 +1,3 @@
-// src/pages/Home.jsx
 import { NavLink } from 'react-router-dom';
 import VendingMachine from '../assets/images/vending-machine.png';
 
@@ -15,7 +14,7 @@ function Home() {
         <img
           src={VendingMachine}
           alt="Vending Machine"
-          className="w-full max-w-xs mx-auto rounded-lg shadow-lg mb-8" // Reduced 50% (max-w-md → max-w-xs)
+          className="w-full max-w-xs mx-auto rounded-lg shadow-lg mb-8"
           loading="lazy"
         />
         <NavLink

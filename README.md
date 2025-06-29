@@ -68,44 +68,46 @@ Traditional vending machines are outdated:
 ---
 
 ### Project Structure
+
+~~~
 web3vendly/
 ├── public/
-│ ├── Web3Vendly_favicon.png
-│ ├── Web3Vendly_logo.png
-│ ├── Shardeum_logo_white.png
-│ ├── discord.svg
-│ ├── github.svg
-│ ├── linkedin.svg
-│ ├── telegram.svg
-│ ├── twitter.svg
-│ ├── youtube.svg
+│   ├── Web3Vendly_favicon.png
+│   ├── Web3Vendly_logo.png
+│   ├── Shardeum_logo_white.png
+│   ├── discord.svg
+│   ├── github.svg
+│   ├── linkedin.svg
+│   ├── telegram.svg
+│   ├── twitter.svg
+│   ├── youtube.svg
 ├── src/
-│ ├── assets/
-│ │ ├── images/
-│ │ │ ├── vending-machine.jpg
-│ │ │ ├── nft-ticket.jpg
-│ │ │ ├── smart-locker.jpg
-│ ├── components/
-│ │ ├── Header.jsx
-│ │ ├── Footer.jsx
-│ │ ├── WalletConnectButton.jsx
-│ │ ├── QRCodeScanner.jsx
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ ├── Vending.jsx
-│ │ ├── NFTDrops.jsx
-│ │ ├── About.jsx
-│ ├── App.jsx
-│ ├── index.css
-│ ├── main.jsx
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── vending-machine.jpg
+│   │   │   ├── nft-ticket.jpg
+│   │   │   ├── smart-locker.jpg
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   ├── WalletConnectButton.jsx
+│   │   ├── QRCodeScanner.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Vending.jsx
+│   │   ├── NFTDrops.jsx
+│   │   ├── About.jsx
+│   ├── App.jsx
+│   ├── index.css
+│   ├── main.jsx
 ├── contracts/
-│ ├── Web3Vendly.sol
+│   ├── Web3Vendly.sol
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
 ├── .gitignore
 ├── README.md
-
+~~~
 
 ---
 

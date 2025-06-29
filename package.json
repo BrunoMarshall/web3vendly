@@ -1,10 +1,12 @@
 {
   "name": "web3vendly",
   "version": "1.0.0",
+  "homepage": "https://github.com/BrunoMarshall/web3vendly",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -17,6 +19,7 @@
   },
   "devDependencies": {
     "vite": "^4.4.9",
-    "@vitejs/plugin-react": "^4.0.4"
+    "@vitejs/plugin-react": "^4.0.4",
+    "gh-pages": "^5.0.0"
   }
 }

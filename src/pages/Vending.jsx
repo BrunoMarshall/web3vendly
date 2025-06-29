@@ -1,6 +1,5 @@
-// src/pages/Vending.jsx
 import { useState, useEffect } from 'react';
-// import Web3 from 'web3'; // Temporarily commented out to fix build error
+// import Web3 from 'web3'; // Temporarily commented out to fix error
 import QRCodeScanner from '../components/QRCodeScanner';
 
 const contractABI = [
@@ -17,7 +16,7 @@ const contractABI = [
 ];
 
 function Vending() {
-  // const [web3, setWeb3] = useState(null); // Temporarily commented out
+  // const [web3, setWeb3] = useState(null);
   const [contract, setContract] = useState(null);
   const [account, setAccount] = useState(null);
   const [items, setItems] = useState([
@@ -59,23 +58,25 @@ function Vending() {
   };
 
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold text-vendly-blue mb-6">Vending Machine</h1>
-      <QRCodeScanner machineAddress={machineAddress} />
-      <div className="grid md:grid-cols-3 gap-6 mt-8">
-        {items.map((item) => (
-          <div key={item.id} className="bg-white p-6 rounded-lg shadow">
-            <h2 className="text-xl font-semibold">{item.name}</h2>
-            <p className="text-gray-600 mb-4">Price: {item.price}</p>
-            <button
-              onClick={() => purchaseItem(item.id, item.price)}
-              className="bg-vendly-accent text-vendly-blue px-4 py-2 rounded hover:bg-yellow-400"
-              disabled // Disable until web3 is fixed
-            >
-              Buy Now
-            </button>
-          </div>
-        ))}
+    <div className="min-h-screen flex items-center justify-center py-12 px-4">
+      <div className="container mx-auto max-w-3xl flex flex-col items-center text-center">
+        <h1 className="text-3xl font-bold text-vendly-blue mb-6 text-center">Vending Machine</h1>
+        <QRCodeScanner machineAddress={machineAddress} />
+        <div className="grid md:grid-cols-3 gap-6 mt-8 w-full">
+          {items.map((item) => (
+            <div key={item.id} className="bg-white p-6 rounded-lg shadow">
+              <h2 className="text-xl font-semibold">{item.name}</h2>
+              <p className="text-gray-600 mb-4">Price: {item.price}</p>
+              <button
+                onClick={() => purchaseItem(item.id, item.price)}
+                className="bg-vendly-accent text-vendly-blue px-4 py-2 rounded hover:bg-yellow-400"
+                disabled
+              >
+                Buy Now
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -6,8 +6,6 @@ function NFTDrops() {
   const [account, setAccount] = useState(null);
 
   const contractABI = [
-    // Paste ABI from compiled Web3Vendly.sol
-    // Example placeholder:
     {
       "inputs": [],
       "name": "mintNFT",
@@ -48,10 +46,10 @@ function NFTDrops() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <div className="max-w-3xl w-full flex flex-col items-center text-center font-sans">
+    <div className="min-h-screen flex items-center justify-center py-12 px-4">
+      <div className="container mx-auto max-w-3xl flex flex-col items-center text-center">
         <h1 className="text-3xl font-bold text-vendly-blue mb-6">NFT Drops</h1>
-        <p className="text-lg mb-8">Mint exclusive NFTs for token-gated access or collectibles.</p>
+        <p className="text-lg mb-8 max-w-md mx-auto">Mint exclusive NFTs for token-gated access or collectibles.</p>
         <img
           src={NFTTicket}
           alt="NFT Ticket"
@@ -59,13 +57,15 @@ function NFTDrops() {
           style={{ maxWidth: '448px', marginLeft: 'auto', marginRight: 'auto' }}
           loading="lazy"
         />
-        <button
-          onClick={mintNFT}
-          className="bg-vendly-accent text-vendly-blue px-6 py-3 rounded-lg hover:bg-yellow-400"
-          disabled // Disable button until web3 is fixed
-        >
-          Mint NFT (0.5 SHM)
-        </button>
+        <div className="text-center">
+          <button
+            onClick={mintNFT}
+            className="bg-vendly-accent text-vendly-blue px-6 py-3 rounded-lg hover:bg-yellow-400"
+            disabled
+          >
+            Mint NFT (0.5 SHM)
+          </button>
+        </div>
       </div>
     </div>
   );

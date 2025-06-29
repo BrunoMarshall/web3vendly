@@ -48,17 +48,17 @@ function NFTDrops() {
   };
 
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold text-vendly-blue mb-6">NFT Drops</h1>
-      <p className="text-lg mb-8">Mint exclusive NFTs for token-gated access or collectibles.</p>
-      <img
-        src={NFTTicket}
-        alt="NFT Ticket"
-        className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
-        style={{ maxWidth: '448px', marginLeft: 'auto', marginRight: 'auto' }}
-        loading="lazy"
-      />
-      <div className="text-center">
+    <div className="min-h-screen flex items-center justify-center px-4 py-12">
+      <div className="max-w-3xl w-full flex flex-col items-center text-center font-sans">
+        <h1 className="text-3xl font-bold text-vendly-blue mb-6">NFT Drops</h1>
+        <p className="text-lg mb-8">Mint exclusive NFTs for token-gated access or collectibles.</p>
+        <img
+          src={NFTTicket}
+          alt="NFT Ticket"
+          className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
+          style={{ maxWidth: '448px', marginLeft: 'auto', marginRight: 'auto' }}
+          loading="lazy"
+        />
         <button
           onClick={mintNFT}
           className="bg-vendly-accent text-vendly-blue px-6 py-3 rounded-lg hover:bg-yellow-400"

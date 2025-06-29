@@ -1,4 +1,4 @@
-# web3vendly
+# Web3Vendly
 Crypto-powered smart vending machines for digital &amp; physical assets.
 
 ## Vending Reimagined for the Web3 Era  

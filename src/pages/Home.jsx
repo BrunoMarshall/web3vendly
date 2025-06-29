@@ -1,18 +1,25 @@
 // src/pages/Home.jsx
-import vendingMachine from '../assets/images/vending-machine.png';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="container mx-auto py-12 px-4">
-      <h1 className="text-4xl font-bold text-vendly-blue mb-6">Welcome to Web3Vendly</h1>
-      <p className="text-lg mb-8">
-        The future of vending machines powered by blockchain technology. Purchase products with crypto, unlock exclusive NFTs, and experience a new era of decentralized commerce.
-      </p>
-      <img src="/vending-machine.png" alt="Vending Machine" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" loading="lazy" />
-      <div className="text-center">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-12">
+      <div className="max-w-3xl w-full text-center font-sans">
+        <h1 className="text-5xl font-bold text-vendly-blue mb-6">
+          Welcome to Web3Vendly
+        </h1>
+        <p className="text-xl text-gray-700 mb-8 leading-relaxed">
+          The future of vending machines powered by blockchain technology. Purchase products with crypto, unlock exclusive NFTs, and experience a new era of decentralized commerce.
+        </p>
+        <img
+          src="/vending-machine.png"
+          alt="Vending Machine"
+          className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
+          loading="lazy"
+        />
         <NavLink
           to="/vending"
-          className="bg-vendly-accent text-vendly-blue px-6 py-3 rounded-lg hover:bg-yellow-400"
+          className="inline-block bg-vendly-accent text-vendly-blue px-6 py-3 rounded-lg hover:bg-yellow-400 transition"
         >
           Go to Vending
         </NavLink>
@@ -22,7 +29,3 @@ function Home() {
 }
 
 export default Home;
-
-
-
-

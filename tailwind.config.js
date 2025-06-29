@@ -8,6 +8,9 @@ module.exports = {
         'vendly-blue': '#1E3A8A',
         'vendly-accent': '#F59E0B',
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],

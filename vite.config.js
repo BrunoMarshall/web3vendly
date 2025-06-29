@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/web3vendly', // Removed trailing slash
+  base: '/', // Changed from '/web3vendly' to root
   publicDir: 'public',
 });

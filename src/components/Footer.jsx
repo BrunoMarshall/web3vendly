@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-import ShardeumLogo from '../assets/images/Shardeum_logo_white.png'; // Import image
+import ShardeumLogo from '../assets/images/Shardeum_logo_white.png';
 import DiscordIcon from '../assets/images/discord.svg';
 import GitHubIcon from '../assets/images/github.svg';
 import LinkedInIcon from '../assets/images/linkedin.svg';
@@ -18,18 +18,18 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-vendly-blue text-white py-6">
+    <footer className="bg-vendly-blue text-white py-6 text-center">
       <div className="container mx-auto flex flex-col items-center">
         <p className="mb-4">Supported by</p>
-        <img src={ShardeumLogo} alt="Shardeum Logo" className="h-10 mb-4" />
-        <div className="flex space-x-4">
+        <img src={ShardeumLogo} alt="Shardeum Logo" className="h-5 mb-4" /> {/* h-10 * 0.5 = h-5 */}
+        <div className="flex justify-center space-x-4 mb-4">
           {socialLinks.map((link, index) => (
             <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
               <img src={link.icon} alt={link.alt} className="h-6" />
             </a>
           ))}
         </div>
-        <p className="mt-4">© 2025 Web3Vendly. All rights reserved.</p>
+        <p>© 2025 Web3Vendly. All rights reserved.</p>
       </div>
     </footer>
   );

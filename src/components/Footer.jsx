@@ -9,7 +9,7 @@ import YouTubeIcon from '../assets/images/youtube.svg';
 function Footer() {
   const socialLinks = [
     { icon: DiscordIcon, url: 'https://discord.com/invite/shardeum', alt: 'Shardeum Discord' },
-    { icon: GitHubIcon, url: 'https://github.com/shardeum', alt: 'Shardeum GitHub' },
+    { icon: GitHubIcon, url: 'https://github.com/BrunoMarshall/web3vendly', alt: 'Web3Vendly GitHub' },
     { icon: LinkedInIcon, url: 'https://www.linkedin.com/company/shardeum/', alt: 'Shardeum LinkedIn' },
     { icon: TelegramIcon, url: 'https://t.me/shardeum', alt: 'Shardeum Telegram' },
     { icon: TwitterIcon, url: 'https://twitter.com/shardeum', alt: 'Shardeum Twitter' },

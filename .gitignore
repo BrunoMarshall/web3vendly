@@ -31,3 +31,6 @@ build/
 
 # Optional: Ignore local test files or sensitive data
 *.secret
+
+# Ensure public folder is tracked (do not ignore)
+!public/

@@ -1,6 +1,6 @@
+// src/pages/NFTDrops.jsx
 import { useState, useEffect } from 'react';
 import Web3 from 'web3';
-import nftTicket from '../assets/images/nft-ticket.jpg';
 
 function NFTDrops() {
   const [web3, setWeb3] = useState(null);
@@ -45,7 +45,7 @@ function NFTDrops() {
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-3xl font-bold text-vendly-blue mb-6">NFT Drops</h1>
       <p className="text-lg mb-8">Mint exclusive NFTs for token-gated access or collectibles.</p>
-      <img src={nftTicket} alt="NFT Ticket" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" />
+      <img src="/nft-ticket.jpg" alt="NFT Ticket" className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8" />
       <div className="text-center">
         <button
           onClick={mintNFT}

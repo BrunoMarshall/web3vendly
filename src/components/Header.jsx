@@ -1,12 +1,12 @@
+// src/components/Header.jsx
 import { NavLink } from 'react-router-dom';
 import WalletConnectButton from './WalletConnectButton';
-import logo from '../assets/Web3Vendly_logo.png';
 
 function Header() {
   return (
     <header className="bg-vendly-blue text-white p-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={logo} alt="Web3Vendly Logo" className="h-12" />
+        <img src="/Web3Vendly_logo.png" alt="Web3Vendly Logo" className="h-12" />
         <nav className="space-x-4">
           <NavLink to="/" className={({ isActive }) => (isActive ? 'text-vendly-accent' : 'hover:text-vendly-accent')}>
             Home

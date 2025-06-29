@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import { NavLink } from 'react-router-dom';
+import VendingMachine from '../assets/images/vending-machine.png'; // Import the image
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
           The future of vending machines powered by blockchain technology. Purchase products with crypto, unlock exclusive NFTs, and experience a new era of decentralized commerce.
         </p>
         <img
-          src="/vending-machine.png"
+          src={VendingMachine} // Use the imported image
           alt="Vending Machine"
           className="w-full max-w-md mx-auto rounded-lg shadow-lg mb-8"
           loading="lazy"

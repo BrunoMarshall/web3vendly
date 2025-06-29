@@ -1,14 +1,23 @@
+// src/pages/Vending.jsx
 import { useState, useEffect } from 'react';
-import Web3 from 'web3';
+// import Web3 from 'web3'; // Temporarily commented out to fix build error
 import QRCodeScanner from '../components/QRCodeScanner';
 
 const contractABI = [
   // Paste ABI from compiled Web3Vendly.sol
   // For brevity, assume it's imported or hardcoded
+  // Example placeholder:
+  // {
+  //   "inputs": [{ "internalType": "uint256", "name": "itemId", "type": "uint256" }],
+  //   "name": "purchaseItem",
+  //   "outputs": [],
+  //   "stateMutability": "payable",
+  //   "type": "function"
+  // }
 ];
 
 function Vending() {
-  const [web3, setWeb3] = useState(null);
+  // const [web3, setWeb3] = useState(null); // Temporarily commented out
   const [contract, setContract] = useState(null);
   const [account, setAccount] = useState(null);
   const [items, setItems] = useState([
@@ -22,13 +31,13 @@ function Vending() {
 
   useEffect(() => {
     if (window.ethereum) {
-      const web3Instance = new Web3(window.ethereum);
-      setWeb3(web3Instance);
-      const contractInstance = new web3Instance.eth.Contract(contractABI, contractAddress);
-      setContract(contractInstance);
-      web3Instance.eth.getAccounts().then((accounts) => {
+      // const web3Instance = new Web3(window.ethereum);
+      // setWeb3(web3Instance);
+      // const contractInstance = new web3Instance.eth.Contract(contractABI, contractAddress);
+      // setContract(contractInstance);
+      window.ethereum.request({ method: 'eth_requestAccounts' }).then((accounts) => {
         if (accounts[0]) setAccount(accounts[0]);
-      });
+      }).catch((error) => console.error('Account access error:', error));
     }
   }, []);
 
@@ -38,11 +47,11 @@ function Vending() {
       return;
     }
     try {
-      await contract.methods.purchaseItem(itemId).send({
-        from: account,
-        value: web3.utils.toWei(price.split(' ')[0], 'ether'),
-      });
-      alert(`Item ${itemId} purchased! Product dispensed.`);
+      // await contract.methods.purchaseItem(itemId).send({
+      //   from: account,
+      //   value: web3.utils.toWei(price.split(' ')[0], 'ether'),
+      // });
+      alert(`Item ${itemId} purchase is temporarily disabled due to build issues.`);
     } catch (error) {
       console.error('Purchase failed:', error);
       alert('Purchase failed. Check console for details.');
@@ -61,6 +70,7 @@ function Vending() {
             <button
               onClick={() => purchaseItem(item.id, item.price)}
               className="bg-vendly-accent text-vendly-blue px-4 py-2 rounded hover:bg-yellow-400"
+              disabled // Disable until web3 is fixed
             >
               Buy Now
             </button>

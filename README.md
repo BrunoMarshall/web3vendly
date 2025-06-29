@@ -13,10 +13,10 @@ Web3Vendly revolutionizes vending by bringing it into the Web3 ecosystem. Our cr
 
 Traditional vending machines are outdated:
 
-- 🔴 Limited payment options — no crypto or stablecoin acceptance  
-- 🔴 No integration with NFTs, tokens, or blockchain  
-- 🔴 Lack of transparency and traceability  
-- 🔴 No personalized or token-gated experiences  
+🔴 Limited payment options — no crypto or stablecoin acceptance  
+🔴 No integration with NFTs, tokens, or blockchain  
+🔴 Lack of transparency and traceability  
+🔴 No personalized or token-gated experiences  
 
 ---
 
@@ -42,9 +42,9 @@ Traditional vending machines are outdated:
 
 ### Market Opportunity
 
-- 🎯 $30B+ smart vending market globally  
-- 🎯 Growing adoption of crypto payments  
-- 🎯 No dominant player bridging vending and Web3  
+🎯 $30B+ smart vending market globally  
+🎯 Growing adoption of crypto payments  
+🎯 No dominant player bridging vending and Web3  
 
 ---
 
@@ -68,4 +68,68 @@ Traditional vending machines are outdated:
 ---
 
 ### Project Structure
+web3vendly/
+├── public/
+│ ├── Web3Vendly_favicon.png
+│ ├── Web3Vendly_logo.png
+│ ├── Shardeum_logo_white.png
+│ ├── discord.svg
+│ ├── github.svg
+│ ├── linkedin.svg
+│ ├── telegram.svg
+│ ├── twitter.svg
+│ ├── youtube.svg
+├── src/
+│ ├── assets/
+│ │ ├── images/
+│ │ │ ├── vending-machine.jpg
+│ │ │ ├── nft-ticket.jpg
+│ │ │ ├── smart-locker.jpg
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── Footer.jsx
+│ │ ├── WalletConnectButton.jsx
+│ │ ├── QRCodeScanner.jsx
+│ ├── pages/
+│ │ ├── Home.jsx
+│ │ ├── Vending.jsx
+│ │ ├── NFTDrops.jsx
+│ │ ├── About.jsx
+│ ├── App.jsx
+│ ├── index.css
+│ ├── main.jsx
+├── contracts/
+│ ├── Web3Vendly.sol
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+├── .gitignore
+├── README.md
+
+
+---
+
+### Get Started
+
+
+---
+
+### Contributing
+
+We welcome contributions! Please fork the repo and open a pull request with your improvements or fixes.
+
+---
+
+### Contact & Partnership
+
+Web3Vendly is the future of vending — seamless, decentralized, and crypto-powered with Shardeum.
+
+👉 Partner with us. Pilot our system. Invest in the future.
+
+🌐 [www.web3vendly.com](https://www.web3vendly.com)
+
+---
+
+### License
+MIT
 

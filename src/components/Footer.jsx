@@ -23,8 +23,8 @@ function Footer() {
         <img
           src={ShardeumLogo}
           alt="Shardeum Logo"
-          className="h-5 mb-4" // 50% smaller
-          style={{ height: '20px' }}
+          className="h-10 mb-4"
+          style={{ height: '40px' }}
         />
         <div className="flex justify-center space-x-4 mb-4">
           {socialLinks.map((link, index) => (
@@ -33,7 +33,7 @@ function Footer() {
             </a>
           ))}
         </div>
-        <p>© 2025 Web3Vendly. All rights reserved. Powered by Shardeum.</p>
+        <p>© 2025 Web3Vendly. All rights reserved.</p>
       </div>
     </footer>
   );
